@@ -1,7 +1,7 @@
 cwlVersion: v1.2
 class: Workflow
 
-label: Mobilomify 
+label: {{ cookiecutter.project_slug }} 
 
 inputs:
   message:
@@ -10,7 +10,7 @@ inputs:
 steps:
   step1_example:
     label: example
-    run: ./tools/example/example.cwl
+    run: ../tools/example/example.cwl
     in:
       message: message
     out:
@@ -22,7 +22,7 @@ outputs:
       type: File
 
 doc: |
-    Description of the pipeline
+    {{ cookiecutter.project_short_description }}
 
 $namespaces:
  edam: http://edamontology.org/

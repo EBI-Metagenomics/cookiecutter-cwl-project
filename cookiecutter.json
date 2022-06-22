@@ -1,8 +1,7 @@
 {
-    "organization": "EMBL-EBI",
-    "project_name": "CWL project Boilerplate",
-    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
-    "project_short_description": "CWL Boilerplate contains all the boilerplate you need to create a CWL pipeline.",
-    "version": "0.1.0",
-    "open_source_license": ["Apache Software License 2.0", "GNU General Public License v3"]
-  }
+  "project_name": "CWL project Boilerplate",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "project_short_description": "CWL Boilerplate contains all the boilerplate you need to create a CWL pipeline.",
+  "version": "0.1.0",
+  "open_source_license": ["Apache Software License 2.0", "GNU General Public License v3"]
+}

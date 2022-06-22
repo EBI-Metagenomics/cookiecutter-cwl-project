@@ -1,8 +1,8 @@
 # example unit test for the workflow
 - job: workflow_input.yml
-  tool: ../../{{cookiecutter.project_slug}}/workflows/{{cookiecutter.project_slug}}.cwl
-  short_name: pipeline.cwl
-  doc: "Example workflow"
+  tool: ../../src/workflows/{{cookiecutter.project_slug}}.cwl
+  short_name: {{cookiecutter.project_slug}}.cwl
+  doc: {{ cookiecutter.project_short_description}}
   output:
     example_output:
       basename: output.txt
